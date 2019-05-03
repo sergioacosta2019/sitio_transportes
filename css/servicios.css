@@ -1,0 +1,47 @@
+.servicio{
+	border: 1px solid red;
+	border-radius: 0.7em;
+	margin: 1em 0;
+	box-sizing: border-box;
+	padding: 1em;
+	overflow: hidden;
+}
+
+.servicio figure{
+	display: inline-block;
+}
+
+.servicio figure img{
+	border-radius: 0.8em;
+}
+
+.servicio .info{
+	width: 75%;
+}
+
+.servicio .info h4{
+	color: #2e64a1;
+	font-size: 1.2em;
+	font-weight: 500;
+	font-style: italic;
+	margin: 0 0 1em;
+	border-bottom: 1px solid #2e64a1;
+	padding-bottom: 0.5em;
+}
+
+.servicio:nth-child(odd) figure{ /*impar*/
+	float: left;
+	margin: 0 1em 0 0;
+}
+.servicio:nth-child(odd) .info{ /*impar*/
+	float: right;
+	}
+
+.servicio:nth-child(even) figure{ /*par*/
+	float: right;
+	margin: 0 0 0 1em;
+}
+.servicio:nth-child(even) .info{  /*par*/
+	float: left;
+	
+}
